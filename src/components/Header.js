@@ -53,7 +53,7 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+91-XXX-XXX-XXXX" className="text-gray-300 hover:text-white">
+            <a href="tel:+919243543141" className="text-gray-300 hover:text-white">
               <FaPhone className="h-4 w-4" />
             </a>
             <a href="mailto:info@crestwin.in" className="text-gray-300 hover:text-white">

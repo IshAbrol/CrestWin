@@ -41,8 +41,8 @@ const Contact = () => {
     {
       city: 'Indore',
       country: 'India (HQ)',
-      address: 'B-92, Vistara Township, MR-11 Road, Khudel, Indore, MP - 452016',
-      phone: '+91-XXX-XXX-XXXX',
+      address: 'B-92, Vistara Township, MR-11 Road, Khudel, Indore, MP - 452010',
+      phone: '+91 9243543141',
       email: 'info@crestwin.in',
       timezone: 'IST',
       coordinates: [22.7196, 75.8577]
@@ -278,7 +278,7 @@ const Contact = () => {
                   <FaPhone className="h-5 w-5 text-blue-400 mr-4" />
                   <div>
                     <p className="text-white font-semibold">Phone</p>
-                    <p className="text-gray-300">+91-XXX-XXX-XXXX</p>
+                    <p className="text-gray-300">+91 9243543141</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -292,7 +292,7 @@ const Contact = () => {
                   <FaMapMarkerAlt className="h-5 w-5 text-blue-400 mr-4" />
                   <div>
                     <p className="text-white font-semibold">Address</p>
-                    <p className="text-gray-300">B-92, Vistara Township, MR-11 Road, Khudel, Indore, MP, India - 452016</p>
+                    <p className="text-gray-300">B-92, Vistara Township, MR-11 Road, Khudel, Indore, MP, India - 452010</p>
                   </div>
                 </div>
                 <div className="flex items-center">
