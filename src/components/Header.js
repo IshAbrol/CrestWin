@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes, FaCode, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaBars, FaTimes, FaPhone, FaEnvelope } from 'react-icons/fa';
+import Logo from './Logo';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,10 +33,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
-              <FaCode className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold text-white">CrestWin</span>
-            </Link>
+            <Logo />
           </div>
 
           <nav className="hidden md:flex space-x-8">

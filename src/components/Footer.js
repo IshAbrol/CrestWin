@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaCode, FaLinkedin, FaTwitter, FaGithub, FaFacebook, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaGithub, FaFacebook, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
@@ -8,28 +9,25 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <FaCode className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">CrestWin</span>
-            </div>
+            <Logo size="default" />
             <p className="text-gray-400 text-sm">
               Software development and IT services company helping startups, SMEs, and global enterprises 
               build scalable, secure, and high-performing digital products.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://linkedin.com/company/crestwin" className="text-gray-400 hover:text-blue-400 transition-colors" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://twitter.com/crestwin" className="text-gray-400 hover:text-blue-400 transition-colors" target="_blank" rel="noopener noreferrer">
                 <FaTwitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://github.com/crestwin" className="text-gray-400 hover:text-blue-400 transition-colors" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://facebook.com/crestwin" className="text-gray-400 hover:text-blue-400 transition-colors" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://instagram.com/crestwin" className="text-gray-400 hover:text-blue-400 transition-colors" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="h-5 w-5" />
               </a>
             </div>
@@ -83,9 +81,9 @@ const Footer = () => {
               © 2025 CrestWin Private Limited. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+              <Link to="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>
+              <Link to="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</Link>
+              <Link to="/cookies" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</Link>
             </div>
           </div>
         </div>

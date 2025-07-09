@@ -1,0 +1,30 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Logo Icon -->
+  <rect x="5" y="10" width="40" height="40" rx="8" fill="url(#iconGrad)"/>
+  <text x="25" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">C</text>
+  
+  <!-- Accent Circle -->
+  <circle cx="40" cy="15" r="5" fill="url(#accentGrad)"/>
+  
+  <!-- Company Name -->
+  <text x="55" y="32" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">Crest</text>
+  <text x="118" y="32" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="url(#textGrad)">Win</text>
+  
+  <!-- Subtitle -->
+  <text x="55" y="45" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">Private Limited</text>
+</svg>

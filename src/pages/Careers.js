@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaMapMarkerAlt, FaClock, FaBriefcase, FaGraduationCap, FaUsers, FaLaptop, FaHeart, FaGlobe, FaChartLine, FaRocket } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaClock, FaBriefcase, FaGraduationCap, FaLaptop, FaHeart, FaGlobe, FaChartLine, FaRocket } from 'react-icons/fa';
 
 const Careers = () => {
   const jobOpenings = [
@@ -202,7 +202,7 @@ const Careers = () => {
               Our Values
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              What drives us every day and makes TechSolutions a great place to work
+              What drives us every day and makes CrestWin a great place to work
             </p>
           </motion.div>
 
@@ -385,7 +385,7 @@ const Careers = () => {
                 Send Resume
               </Link>
               <a
-                href="mailto:careers@techsolutions.com"
+                href="mailto:careers@crestwin.com"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-all duration-200"
               >
                 Email Us

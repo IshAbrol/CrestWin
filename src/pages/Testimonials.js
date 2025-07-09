@@ -6,13 +6,13 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
+      name: 'Rajesh Sharma',
       role: 'CTO',
-      company: 'TechCorp Inc.',
+      company: 'PayTech Solutions Pvt Ltd',
       image: '/api/placeholder/300/300',
       rating: 5,
-      testimonial: 'TechSolutions transformed our legacy system into a modern, scalable platform. Their expertise in full-stack development and cloud architecture exceeded our expectations. The team delivered on time and within budget.',
-      project: 'Enterprise Platform Modernization',
+      testimonial: 'CrestWin transformed our legacy banking system into a modern, scalable fintech platform. Their expertise in full-stack development and cloud architecture exceeded our expectations. The team delivered on time and within budget, helping us serve 2 million+ users.',
+      project: 'Digital Banking Platform',
       social: {
         linkedin: '#',
         twitter: '#'
@@ -20,26 +20,26 @@ const Testimonials = () => {
     },
     {
       id: 2,
-      name: 'Michael Rodriguez',
+      name: 'Priya Patel',
       role: 'CEO',
-      company: 'InnovateLabs',
+      company: 'HealthCare Connect India',
       image: '/api/placeholder/300/300',
       rating: 5,
-      testimonial: 'The mobile app developed by TechSolutions has been a game-changer for our business. Their attention to detail and user experience design resulted in a 300% increase in user engagement. Highly recommended!',
-      project: 'Mobile App Development',
+      testimonial: 'The telemedicine mobile app developed by CrestWin revolutionized healthcare delivery in rural India. Their attention to detail and user experience design resulted in a 400% increase in patient consultations. Exceptional work!',
+      project: 'Telemedicine Mobile App',
       social: {
         linkedin: '#'
       }
     },
     {
       id: 3,
-      name: 'Emily Chen',
-      role: 'Head of Data',
-      company: 'DataFlow Solutions',
+      name: 'Arjun Gupta',
+      role: 'Head of Analytics',
+      company: 'EduTech India Pvt Ltd',
       image: '/api/placeholder/300/300',
       rating: 5,
-      testimonial: 'Their AI/ML team built us a predictive analytics platform that revolutionized our decision-making process. The ROI was evident within the first quarter. Outstanding technical expertise and project management.',
-      project: 'AI/ML Analytics Platform',
+      testimonial: 'CrestWin\'s AI/ML team built us a personalized learning platform that transformed education for 500,000+ students. The predictive analytics improved learning outcomes by 60%. Outstanding technical expertise and project management.',
+      project: 'AI-Powered Learning Platform',
       social: {
         linkedin: '#',
         twitter: '#'
@@ -52,7 +52,7 @@ const Testimonials = () => {
       company: 'CloudVision',
       image: '/api/placeholder/300/300',
       rating: 5,
-      testimonial: 'TechSolutions helped us migrate our entire infrastructure to AWS with zero downtime. Their DevOps expertise and careful planning made what seemed impossible, effortless. True professionals.',
+      testimonial: 'CrestWin helped us migrate our entire infrastructure to AWS with zero downtime. Their DevOps expertise and careful planning made what seemed impossible, effortless. True professionals.',
       project: 'Cloud Migration & DevOps',
       social: {
         linkedin: '#'
@@ -60,26 +60,26 @@ const Testimonials = () => {
     },
     {
       id: 5,
-      name: 'Lisa Wang',
+      name: 'Neha Agarwal',
       role: 'Product Manager',
-      company: 'NextGen Systems',
+      company: 'AgriTech Solutions Mumbai',
       image: '/api/placeholder/300/300',
       rating: 5,
-      testimonial: 'Working with TechSolutions was a fantastic experience. They understood our vision perfectly and delivered a web platform that exceeded our expectations. The ongoing support has been excellent.',
-      project: 'Web Platform Development',
+      testimonial: 'Working with CrestWin was a fantastic experience. They understood our vision for digitizing agriculture and delivered a comprehensive farmer management platform. The ongoing support has been excellent, helping us reach 50,000+ farmers.',
+      project: 'Agricultural Management Platform',
       social: {
         linkedin: '#'
       }
     },
     {
       id: 6,
-      name: 'Robert Thompson',
+      name: 'Vikram Singh',
       role: 'Founder',
-      company: 'StartupTech',
+      company: 'LogiTech Startups Bengaluru',
       image: '/api/placeholder/300/300',
       rating: 5,
-      testimonial: 'As a startup, we needed a reliable technology partner. TechSolutions not only delivered our MVP but also provided valuable technical guidance that helped us scale. They truly care about their clients success.',
-      project: 'MVP Development & Scaling',
+      testimonial: 'As a logistics startup, we needed a reliable technology partner. CrestWin not only delivered our MVP but also provided valuable technical guidance that helped us scale from 100 to 10,000+ daily deliveries. They truly care about their clients success.',
+      project: 'Logistics Management System',
       social: {
         linkedin: '#',
         twitter: '#'
@@ -137,7 +137,7 @@ const Testimonials = () => {
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Don't just take our word for it. Here's what our clients say about 
-              working with TechSolutions and the results we've achieved together.
+              working with CrestWin and the results we've achieved together.
             </p>
           </motion.div>
         </div>
@@ -270,17 +270,17 @@ const Testimonials = () => {
           >
             <FaQuoteLeft className="h-12 w-12 text-blue-400 mx-auto mb-8" />
             <blockquote className="text-2xl md:text-3xl font-light text-white mb-8 italic">
-              "TechSolutions doesn't just deliver code; they deliver solutions that transform businesses. 
+              "CrestWin doesn't just deliver code; they deliver solutions that transform businesses. 
               Their technical expertise combined with their understanding of business needs makes them 
               the ideal technology partner."
             </blockquote>
             <div className="flex items-center justify-center">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-4">
-                <span className="text-white font-bold text-lg">JD</span>
+                <span className="text-white font-bold text-lg">RM</span>
               </div>
               <div className="text-left">
-                <p className="text-white font-semibold">John Davis</p>
-                <p className="text-blue-400">CEO, Enterprise Solutions Inc.</p>
+                <p className="text-white font-semibold">Ravi Mehta</p>
+                <p className="text-blue-400">CEO, Digital Bharat Enterprises</p>
               </div>
             </div>
           </motion.div>
