@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes, FaPhone, FaEnvelope } from 'react-icons/fa';
 import Logo from './Logo';
+import { trackButtonClick } from '../utils/analytics';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,15 +54,16 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+919243543141" className="text-gray-300 hover:text-white">
+            <a href="tel:+919243543141" className="text-gray-300 hover:text-white" onClick={() => trackButtonClick('Phone Click', 'header')}>
               <FaPhone className="h-4 w-4" />
             </a>
-            <a href="mailto:info@crestwin.in" className="text-gray-300 hover:text-white">
+            <a href="mailto:info@crestwin.in" className="text-gray-300 hover:text-white" onClick={() => trackButtonClick('Email Click', 'header')}>
               <FaEnvelope className="h-4 w-4" />
             </a>
             <Link
               to="/contact"
               className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+              onClick={() => trackButtonClick('Get Quote', 'header')}
             >
               Get Quote
             </Link>

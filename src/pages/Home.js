@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaRocket, FaGlobe, FaUsers, FaAward, FaCode, FaMobile, FaCloud, FaDatabase, FaBrain, FaDesktop } from 'react-icons/fa';
 import SEO from '../components/SEO';
+import { trackButtonClick } from '../utils/analytics';
 
 const Home = () => {
   const stats = [
@@ -106,12 +107,14 @@ const Home = () => {
               <Link
                 to="/contact"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-200 shadow-glow"
+                onClick={() => trackButtonClick('Get Started Today', 'hero_section')}
               >
                 Get Started Today
               </Link>
               <Link
                 to="/projects"
                 className="glass-effect text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-200 hover:bg-white/20"
+                onClick={() => trackButtonClick('View Our Work', 'hero_section')}
               >
                 View Our Work
               </Link>
@@ -264,12 +267,14 @@ const Home = () => {
               <Link
                 to="/contact"
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-200"
+                onClick={() => trackButtonClick('Start Your Project', 'cta_section')}
               >
                 Start Your Project
               </Link>
               <Link
                 to="/about"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-all duration-200"
+                onClick={() => trackButtonClick('Learn More', 'cta_section')}
               >
                 Learn More
               </Link>
