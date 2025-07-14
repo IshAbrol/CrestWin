@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import AnalyticsLoader from './components/AnalyticsLoader';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -16,6 +17,7 @@ import './App.css';
 function App() {
   return (
     <Router>
+      <AnalyticsLoader />
       <div className="App min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
         <Header />
         <motion.main

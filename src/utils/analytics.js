@@ -1,7 +1,18 @@
 // Analytics utility functions for tracking user interactions and events
+import { isAnalyticsEnabled, isCustomEventEnabled, debugLog, isTestMode } from '../config/analytics';
 
 // Google Analytics 4 (GA4) Event Tracking
 export const trackEvent = (eventName, parameters = {}) => {
+  if (!isAnalyticsEnabled('GOOGLE_ANALYTICS')) {
+    debugLog(`GA4 tracking disabled - Event: ${eventName}`, parameters);
+    return;
+  }
+
+  if (isTestMode()) {
+    debugLog(`TEST MODE - GA4 Event: ${eventName}`, parameters);
+    return;
+  }
+
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', eventName, {
       event_category: parameters.category || 'General',
@@ -9,6 +20,9 @@ export const trackEvent = (eventName, parameters = {}) => {
       value: parameters.value || 0,
       ...parameters
     });
+    debugLog(`GA4 Event tracked: ${eventName}`, parameters);
+  } else {
+    debugLog(`GA4 not loaded - Event: ${eventName}`, parameters);
   }
 };
 
@@ -25,6 +39,11 @@ export const trackPageView = (path, title) => {
 
 // Track form submissions
 export const trackFormSubmission = (formName, success = true) => {
+  if (!isCustomEventEnabled('trackFormSubmissions')) {
+    debugLog(`Form submission tracking disabled: ${formName}`);
+    return;
+  }
+
   trackEvent('form_submit', {
     category: 'Form',
     label: formName,
@@ -32,11 +51,15 @@ export const trackFormSubmission = (formName, success = true) => {
     form_name: formName,
     form_success: success
   });
-  
 };
 
 // Track button clicks
 export const trackButtonClick = (buttonName, location) => {
+  if (!isCustomEventEnabled('trackButtonClicks')) {
+    debugLog(`Button click tracking disabled: ${buttonName}`);
+    return;
+  }
+
   trackEvent('button_click', {
     category: 'Engagement',
     label: buttonName,
@@ -67,13 +90,17 @@ export const trackExternalLink = (url, linkText) => {
 
 // Track service inquiries
 export const trackServiceInquiry = (serviceName, budget = '') => {
+  if (!isCustomEventEnabled('trackServiceInquiries')) {
+    debugLog(`Service inquiry tracking disabled: ${serviceName}`);
+    return;
+  }
+
   trackEvent('service_inquiry', {
     category: 'Business',
     label: serviceName,
     service_name: serviceName,
     budget_range: budget
   });
-  
 };
 
 // Track scroll depth
@@ -130,8 +157,16 @@ export const trackConversion = (conversionType, value = 0) => {
 
 // Microsoft Clarity custom tags
 export const clarityTag = (tagName, tagValue) => {
+  if (!isAnalyticsEnabled('MICROSOFT_CLARITY')) {
+    debugLog(`Clarity tagging disabled: ${tagName}`);
+    return;
+  }
+
   if (typeof window !== 'undefined' && window.clarity) {
     window.clarity('set', tagName, tagValue);
+    debugLog(`Clarity tag set: ${tagName}`, tagValue);
+  } else {
+    debugLog(`Clarity not loaded - Tag: ${tagName}`, tagValue);
   }
 };
 
