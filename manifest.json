@@ -1,0 +1,32 @@
+{
+  "short_name": "CrestWin",
+  "name": "CrestWin Private Limited - Top Software Development Company India",
+  "description": "CrestWin Private Limited is a leading software development company in Indore, India. We specialize in custom software development, web & mobile apps, AI/ML solutions, cloud services, and enterprise solutions for startups, SMEs, and global enterprises. Code the Future, Win with CrestWin.",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1e40af",
+  "background_color": "#0f172a",
+  "categories": ["business", "productivity", "technology", "developer"],
+  "scope": "/",
+  "orientation": "any",
+  "lang": "en",
+  "dir": "ltr"
+}

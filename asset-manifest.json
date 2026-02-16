@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CrestWin/static/css/main.4ccafc88.css",
+    "main.js": "/CrestWin/static/js/main.f147dcb4.js",
+    "index.html": "/CrestWin/index.html",
+    "main.4ccafc88.css.map": "/CrestWin/static/css/main.4ccafc88.css.map",
+    "main.f147dcb4.js.map": "/CrestWin/static/js/main.f147dcb4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ccafc88.css",
+    "static/js/main.f147dcb4.js"
+  ]
+}
