@@ -48,7 +48,8 @@ const AnalyticsLoader = () => {
     if (isAnalyticsEnabled('FACEBOOK_PIXEL')) {
       const pixelId = getAnalyticsId('FACEBOOK_PIXEL');
       debugLog('Loading Facebook Pixel', pixelId);
-      
+
+      // eslint-disable-next-line no-unused-expressions
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
