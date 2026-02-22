@@ -6,40 +6,39 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Rajesh Sharma',
-      role: 'CTO',
-      company: 'PayTech Solutions Pvt Ltd',
+      name: 'Amit Verma',
+      role: 'Founder',
+      company: 'FoodieHub Startup',
       image: '/api/placeholder/300/300',
       rating: 5,
-      testimonial: 'CrestWin transformed our legacy banking system into a modern, scalable fintech platform. Their expertise in full-stack development and cloud architecture exceeded our expectations. The team delivered on time and within budget, helping us serve 2 million+ users.',
-      project: 'Digital Banking Platform',
+      testimonial: 'CrestWin built our food delivery app from scratch. They were patient with our changing requirements and delivered a polished MVP that helped us secure our seed funding. Great communication throughout!',
+      project: 'Food Delivery Mobile App',
       social: {
-        linkedin: '#',
-        twitter: '#'
+        linkedin: '#'
       }
     },
     {
       id: 2,
-      name: 'Priya Patel',
-      role: 'CEO',
-      company: 'HealthCare Connect India',
+      name: 'Sarah Johnson',
+      role: 'Product Manager',
+      company: 'TechStart Solutions',
       image: '/api/placeholder/300/300',
       rating: 5,
-      testimonial: 'The telemedicine mobile app developed by CrestWin revolutionized healthcare delivery in rural India. Their attention to detail and user experience design resulted in a 400% increase in patient consultations. Exceptional work!',
-      project: 'Telemedicine Mobile App',
+      testimonial: 'Working with CrestWin was seamless. They quickly understood our e-commerce requirements and delivered a responsive web app that our customers love. Highly recommended for startups!',
+      project: 'E-commerce Web Platform',
       social: {
         linkedin: '#'
       }
     },
     {
       id: 3,
-      name: 'Arjun Gupta',
-      role: 'Head of Analytics',
-      company: 'EduTech India Pvt Ltd',
+      name: 'Rohan Malhotra',
+      role: 'Co-Founder',
+      company: 'FitLife App',
       image: '/api/placeholder/300/300',
       rating: 5,
-      testimonial: 'CrestWin\'s AI/ML team built us a personalized learning platform that transformed education for 500,000+ students. The predictive analytics improved learning outcomes by 60%. Outstanding technical expertise and project management.',
-      project: 'AI-Powered Learning Platform',
+      testimonial: 'The team at CrestWin developed our fitness tracking app with great attention to detail. They provided valuable suggestions that improved our product. Professional and responsive team!',
+      project: 'Fitness Tracking App',
       social: {
         linkedin: '#',
         twitter: '#'
@@ -47,77 +46,76 @@ const Testimonials = () => {
     },
     {
       id: 4,
-      name: 'David Kim',
-      role: 'VP of Engineering',
-      company: 'CloudVision',
+      name: 'Michael Chen',
+      role: 'CEO',
+      company: 'CloudSync Inc',
       image: '/api/placeholder/300/300',
       rating: 5,
-      testimonial: 'CrestWin helped us migrate our entire infrastructure to AWS with zero downtime. Their DevOps expertise and careful planning made what seemed impossible, effortless. True professionals.',
-      project: 'Cloud Migration & DevOps',
+      testimonial: 'CrestWin helped us build a solid cloud-based document management system. Their technical expertise and timely delivery made our launch smooth. Great value for money!',
+      project: 'Document Management System',
       social: {
         linkedin: '#'
       }
     },
     {
       id: 5,
-      name: 'Neha Agarwal',
-      role: 'Product Manager',
-      company: 'AgriTech Solutions Mumbai',
+      name: 'Priya Deshmukh',
+      role: 'Founder',
+      company: 'EduConnect',
       image: '/api/placeholder/300/300',
       rating: 5,
-      testimonial: 'Working with CrestWin was a fantastic experience. They understood our vision for digitizing agriculture and delivered a comprehensive farmer management platform. The ongoing support has been excellent, helping us reach 50,000+ farmers.',
-      project: 'Agricultural Management Platform',
+      testimonial: 'CrestWin created an online learning platform for us that works beautifully. They understood our vision and delivered exactly what we needed. Excellent support even after project completion!',
+      project: 'Online Learning Platform',
       social: {
         linkedin: '#'
       }
     },
     {
       id: 6,
-      name: 'Vikram Singh',
-      role: 'Founder',
-      company: 'LogiTech Startups Bengaluru',
+      name: 'James Anderson',
+      role: 'Technical Lead',
+      company: 'DataFlow Systems',
       image: '/api/placeholder/300/300',
       rating: 5,
-      testimonial: 'As a logistics startup, we needed a reliable technology partner. CrestWin not only delivered our MVP but also provided valuable technical guidance that helped us scale from 100 to 10,000+ daily deliveries. They truly care about their clients success.',
-      project: 'Logistics Management System',
+      testimonial: 'The CrestWin team built us a data analytics dashboard that exceeded expectations. Clean code, great documentation, and responsive support. Looking forward to working together again!',
+      project: 'Analytics Dashboard',
       social: {
-        linkedin: '#',
-        twitter: '#'
+        linkedin: '#'
       }
     }
   ];
 
   const stats = [
-    { number: '98%', label: 'Client Satisfaction Rate' },
-    { number: '500+', label: 'Projects Completed' },
-    { number: '50+', label: 'Countries Served' },
-    { number: '95%', label: 'Client Retention Rate' }
+    { number: '100%', label: 'Client Satisfaction' },
+    { number: '15+', label: 'Projects Delivered' },
+    { number: '5+', label: 'Countries Served' },
+    { number: '90%', label: 'Repeat Clients' }
   ];
 
   const awards = [
     {
-      title: 'Best Software Development Company',
-      year: '2023',
-      organization: 'TechReview Awards',
+      title: 'Top Rated on Clutch',
+      year: '2025',
+      organization: 'Clutch.co',
+      category: '5.0 Rating'
+    },
+    {
+      title: 'Emerging Tech Startup',
+      year: '2025',
+      organization: 'Startup India',
+      category: 'Recognition'
+    },
+    {
+      title: 'Client Favorite Developer',
+      year: '2025',
+      organization: 'GoodFirms',
+      category: 'Quality'
+    },
+    {
+      title: 'Rising Star in Software',
+      year: '2025',
+      organization: 'Tech Indore',
       category: 'Innovation'
-    },
-    {
-      title: 'Top 10 AI/ML Solutions Provider',
-      year: '2023',
-      organization: 'AI Excellence Awards',
-      category: 'Technology'
-    },
-    {
-      title: 'Customer Choice Award',
-      year: '2022',
-      organization: 'Business Excellence',
-      category: 'Service'
-    },
-    {
-      title: 'Rising Star in Cloud Solutions',
-      year: '2022',
-      organization: 'Cloud Computing Awards',
-      category: 'Excellence'
     }
   ];
 
@@ -270,17 +268,17 @@ const Testimonials = () => {
           >
             <FaQuoteLeft className="h-12 w-12 text-blue-400 mx-auto mb-8" />
             <blockquote className="text-2xl md:text-3xl font-light text-white mb-8 italic">
-              "CrestWin doesn't just deliver code; they deliver solutions that transform businesses. 
-              Their technical expertise combined with their understanding of business needs makes them 
-              the ideal technology partner."
+              "CrestWin is a reliable technology partner for startups. They understand the challenges
+              of building an MVP and deliver quality work on time. Their team is responsive and truly
+              cares about project success."
             </blockquote>
             <div className="flex items-center justify-center">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-4">
-                <span className="text-white font-bold text-lg">RM</span>
+                <span className="text-white font-bold text-lg">AK</span>
               </div>
               <div className="text-left">
-                <p className="text-white font-semibold">Ravi Mehta</p>
-                <p className="text-blue-400">CEO, Digital Bharat Enterprises</p>
+                <p className="text-white font-semibold">Ankit Kumar</p>
+                <p className="text-blue-400">Founder, StartupBuzz India</p>
               </div>
             </div>
           </motion.div>

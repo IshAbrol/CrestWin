@@ -15,19 +15,19 @@ const Footer = () => {
               build scalable, secure, and high-performing digital products.
             </p>
             <div className="flex space-x-4">
-              <a href="https://linkedin.com/company/crestwin" className="text-gray-400 hover:text-blue-400 transition-colors" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/company/crestwin" className="text-gray-400 hover:text-red-400 transition-colors" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="h-5 w-5" />
               </a>
-              <a href="https://twitter.com/crestwin" className="text-gray-400 hover:text-blue-400 transition-colors" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/crestwin" className="text-gray-400 hover:text-red-400 transition-colors" target="_blank" rel="noopener noreferrer">
                 <FaTwitter className="h-5 w-5" />
               </a>
-              <a href="https://github.com/crestwin" className="text-gray-400 hover:text-blue-400 transition-colors" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/crestwin" className="text-gray-400 hover:text-red-400 transition-colors" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="h-5 w-5" />
               </a>
-              <a href="https://facebook.com/crestwin" className="text-gray-400 hover:text-blue-400 transition-colors" target="_blank" rel="noopener noreferrer">
+              <a href="https://facebook.com/crestwin" className="text-gray-400 hover:text-red-400 transition-colors" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="h-5 w-5" />
               </a>
-              <a href="https://instagram.com/crestwin" className="text-gray-400 hover:text-blue-400 transition-colors" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/crestwin" className="text-gray-400 hover:text-red-400 transition-colors" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="h-5 w-5" />
               </a>
             </div>
@@ -60,15 +60,15 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-2">
-                <FaMapMarkerAlt className="h-4 w-4 text-blue-400" />
+                <FaMapMarkerAlt className="h-4 w-4 text-red-400" />
                 <span className="text-gray-400">Plot Number 211, 2nd Floor, Scheme Number 134, Near NRK Luxe, Indore, Madhya Pradesh, 452010</span>
               </div>
               <div className="flex items-center space-x-2">
-                <FaPhone className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-400">+91 9243543141</span>
+                <FaPhone className="h-4 w-4 text-red-400" />
+                <span className="text-gray-400">+91 9203797182</span>
               </div>
               <div className="flex items-center space-x-2">
-                <FaEnvelope className="h-4 w-4 text-blue-400" />
+                <FaEnvelope className="h-4 w-4 text-red-400" />
                 <span className="text-gray-400">hr@crestwin.in</span>
               </div>
             </div>

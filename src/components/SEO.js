@@ -59,7 +59,7 @@ const SEO = ({
       <meta property="business:contact_data:region" content="Madhya Pradesh" />
       <meta property="business:contact_data:postal_code" content="452010" />
       <meta property="business:contact_data:country_name" content="India" />
-      <meta property="business:contact_data:phone_number" content="+91-9243543141" />
+      <meta property="business:contact_data:phone_number" content="+91-9203797182" />
       <meta property="business:contact_data:email" content="hr@crestwin.in" />
 
       {/* JSON-LD Structured Data for Local Business */}
@@ -72,7 +72,7 @@ const SEO = ({
             "image": "${fullImageUrl}",
             "description": "${description}",
             "url": "${fullUrl}",
-            "telephone": "+91-9243543141",
+            "telephone": "+91-9203797182",
             "email": "hr@crestwin.in",
             "address": {
               "@type": "PostalAddress",

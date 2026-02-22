@@ -29,7 +29,7 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed w-full top-0 z-50 glass-effect"
+      className="fixed w-full top-0 z-50 glass-effect border-b border-red-500/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -44,7 +44,7 @@ const Header = () => {
                 to={item.path}
                 className={`text-sm font-medium transition-colors duration-200 ${
                   location.pathname === item.path
-                    ? 'text-blue-400 border-b-2 border-blue-400'
+                    ? 'text-red-400 border-b-2 border-red-400'
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
@@ -54,7 +54,7 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+919243543141" className="text-gray-300 hover:text-white" onClick={() => trackButtonClick('Phone Click', 'header')}>
+            <a href="tel:+919203797182" className="text-gray-300 hover:text-white" onClick={() => trackButtonClick('Phone Click', 'header')}>
               <FaPhone className="h-4 w-4" />
             </a>
             <a href="mailto:hr@crestwin.in" className="text-gray-300 hover:text-white" onClick={() => trackButtonClick('Email Click', 'header')}>
@@ -62,10 +62,10 @@ const Header = () => {
             </a>
             <Link
               to="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+              className="btn-primary text-white px-6 py-2 rounded-lg text-sm font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300"
               onClick={() => trackButtonClick('Get Quote', 'header')}
             >
-              Get Quote
+              <span className="relative z-10">Get Quote</span>
             </Link>
           </div>
 
@@ -94,7 +94,7 @@ const Header = () => {
                 to={item.path}
                 className={`block px-3 py-2 text-base font-medium ${
                   location.pathname === item.path
-                    ? 'text-blue-400 bg-blue-900/20'
+                    ? 'text-red-400 bg-red-900/20'
                     : 'text-gray-300 hover:text-white hover:bg-white/10'
                 }`}
                 onClick={toggleMenu}
@@ -104,7 +104,7 @@ const Header = () => {
             ))}
             <Link
               to="/contact"
-              className="block px-3 py-2 text-base font-medium bg-blue-600 hover:bg-blue-700 text-white rounded-md"
+              className="block px-3 py-2 text-base font-medium bg-red-600 hover:bg-red-700 text-white rounded-md"
               onClick={toggleMenu}
             >
               Get Quote

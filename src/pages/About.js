@@ -5,34 +5,34 @@ import { FaGlobe, FaUsers, FaAward, FaRocket, FaLinkedin, FaTwitter, FaGithub } 
 const About = () => {
   const milestones = [
     {
-      year: '2025',
-      title: 'Company Founded',
-      description: 'CrestWin Private Limited founded by Shivank Goswami and Aarush Dhavale in Indore'
+      year: 'Q1 2025',
+      title: 'The Beginning',
+      description: 'CrestWin Private Limited founded by Shivank Goswami and Aarush Dhavale with a vision to deliver quality software solutions'
     },
     {
-      year: '2025',
-      title: 'First Projects',
-      description: 'Delivered initial projects for startups and SMEs across India and US'
+      year: 'Q2 2025',
+      title: 'First Client Projects',
+      description: 'Successfully delivered our first web and mobile app projects for early-stage startups'
     },
     {
-      year: '2025',
-      title: 'Team Expansion',
-      description: 'Grew to 12+ talented engineers, analysts, UI/UX designers, and QA experts'
+      year: 'Q3 2025',
+      title: 'Building Our Team',
+      description: 'Onboarded talented developers and designers to strengthen our technical capabilities'
     },
     {
-      year: '2025',
-      title: 'Global Reach',
-      description: 'Expanded services to clients in UK, Germany, and Australia'
+      year: 'Q4 2025',
+      title: 'Growing Our Portfolio',
+      description: 'Expanded our client base and successfully completed 15+ projects across different domains'
     },
     {
-      year: '2025',
-      title: 'Technology Excellence',
-      description: 'Established expertise in AI/ML, cloud solutions, and enterprise software'
+      year: '2026',
+      title: 'International Presence',
+      description: 'Started serving clients in USA, UK, and Australia, establishing our global footprint'
     },
     {
-      year: '2025',
-      title: 'Future Vision',
-      description: 'Working towards ISO 27001 compliance and AWS/Azure partnerships'
+      year: 'Future',
+      title: 'Scaling Up',
+      description: 'Focused on expanding our expertise in AI/ML, cloud solutions, and building long-term partnerships'
     }
   ];
 
@@ -50,20 +50,6 @@ const About = () => {
       image: '/api/placeholder/300/300',
       description: 'Experienced technologist in distributed systems, DevOps, and AI/ML platforms',
       social: { linkedin: 'https://linkedin.com/in/aarush-dhavale', github: '#' }
-    },
-    {
-      name: 'Engineering Team',
-      role: 'Senior Developers',
-      image: '/api/placeholder/300/300',
-      description: 'Talented engineers specializing in full-stack, mobile, and cloud technologies',
-      social: { linkedin: '#', github: '#' }
-    },
-    {
-      name: 'Design & QA Team',
-      role: 'UI/UX & Quality',
-      image: '/api/placeholder/300/300',
-      description: 'Creative designers and meticulous QA professionals ensuring top-quality deliveries',
-      social: { linkedin: '#', twitter: '#' }
     }
   ];
 
